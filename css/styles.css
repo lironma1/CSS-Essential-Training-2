@@ -1,0 +1,156 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AF - light blue
+#EDF2F4 - blue/white
+#EF233C -red
+*/
+
+/* Global styles
+-----------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+a {
+  color: #EF233C;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.btm {
+  text-decoration: none;
+  background: #EF233C;
+  color:  white;
+  padding: 10px;
+  display: inline-block;
+}
+/* Header and Footer
+-----------------------------*/
+header, footer {
+  background: #2B2D42;
+  color: #8D99AF;
+}
+/* header*/
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header h1, header h2 {
+  color: #EDF2F4;
+  margin: 0;
+}
+.profile-img {
+  border-radius: 50%;
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* footer */
+footer {
+  text-align:  center;
+}
+.content-info a {
+  padding: 10px;
+  display: inline-block;
+
+}
+/* navigation
+-----------------------------*/
+nav {
+  text-align: center;
+  background: #EDF2F4;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* Work Experience
+-----------------------------*/
+.Work {
+  background: #8D99AF;
+}
+h3 ~ p {
+  margin: 0;
+}
+/*
+.job-description {
+  margin: 25px;
+}
+*/
+.job-description p:first-of-type {
+  margin: 0;
+}
+/*  Education
+-----------------------------*/
+.Education {
+  background: linear-gradient(rgba(237, 242, 244, 0.8), rgba(237, 242, 244, 0.5)),
+              url(../images/david-rodrigo-470187.jpg) no-repeat fixed;
+  background-size: cover;
+}
+.Education P:last-of-type {
+  margin-top: 30PX;
+}
+UL + h3 {
+  margin-top: 40px;
+}
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+    min-height: 120px;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    min-height: 120px;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
